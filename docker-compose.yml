@@ -1,0 +1,8 @@
+version: "3.8"
+services: 
+  mongohost:
+    image:  mongo
+  expressapi:
+    build: .
+    ports:
+      - "9000:3000"
